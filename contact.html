@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -24,12 +25,52 @@
       </ul>
     </nav>
   </header>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kontak - Appsheet Developer System">
+  <title>Kontak</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header id="header">
+    <nav class="navbar">
+      <div class="logo">AppsheetDev</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">Tentang Kami</a></li>
+        <li><a href="portfolio.html">Portofolio</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
 
   <section class="hero">
-    <h1>Selamat Datang di Appsheet Developer System</h1>
-    <p>Solusi Aplikasi Tanpa Coding</p>
-    <a href="contact.html" class="cta-button">Konsultasi Gratis</a>
+    <h1>Kontak Kami</h1>
+    <p>Jika Anda tertarik untuk bekerja sama atau memiliki pertanyaan, jangan ragu untuk menghubungi kami.</p>
   </section>
+
+  <section class="contact-form">
+    <form action="submit-contact.php" method="POST">
+      <label for="name">Nama:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Pesan:</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <button type="submit" class="cta-button">Kirim Pesan</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Appsheet Developer System. Semua hak dilindungi.</p>
+  </footer>
 
   <script src="js/script.js"></script>
 </body>
