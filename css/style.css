@@ -41,3 +41,26 @@ nav ul li a:hover {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
+/* Menambahkan latar belakang gradien pada navbar */
+.navbar {
+  background: linear-gradient(to right, #2196F3, #0D47A1); /* Gradien warna biru */
+  padding: 10px 20px; /* Memberikan ruang di sekitar konten navbar */
+  position: sticky; /* Menjaga navbar tetap di atas saat scrolling */
+  top: 0; /* Agar navbar selalu muncul di bagian atas */
+  z-index: 1000; /* Menjamin navbar berada di atas konten lainnya */
+}
+
+/* Membuat link di navbar lebih menarik */
+.nav-links li a {
+  color: white; /* Warna teks putih */
+  text-decoration: none; /* Menghapus garis bawah pada link */
+  font-size: 18px; /* Ukuran font yang lebih besar */
+  padding: 10px 15px; /* Memberikan ruang di sekitar link */
+}
+
+.nav-links li a:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Menambahkan efek hover */
+  border-radius: 5px; /* Membuat sudut link lebih lembut */
+}
+
+
