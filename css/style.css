@@ -69,3 +69,71 @@ header {
         padding: 8px 15px;
     }
 }
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2196F3; /* Background biru di seluruh halaman */
+    color: white;
+}
+
+header {
+    background-color: #333; /* Warna abu-abu untuk header */
+    padding: 20px;
+    color: white;
+    position: sticky;
+    top: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links li a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Efek hover untuk link */
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.hero {
+    background: linear-gradient(#2196F3, #0D47A1); /* Latar belakang gradasi biru */
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.cta-button {
+    background: white;
+    color: #0D47A1;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+/* Style untuk halaman lain */
+section {
+    padding: 20px;
+    background-color: #2196F3; /* Background biru untuk halaman */
+}
+
+footer {
+    background-color: #333; /* Warna abu-abu untuk footer */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
