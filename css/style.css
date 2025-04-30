@@ -102,3 +102,6 @@
       padding: 1.5rem 2rem;
       margin-top: 3rem;
     }
+.button {
+  margin-top: 1rem; /* tambahkan ini */
+}
