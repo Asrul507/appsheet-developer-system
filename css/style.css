@@ -1,138 +1,58 @@
-/* General Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #F2E1C1; /* Soft Beige background */
-    color: #333333; /* Teks gelap untuk kontras */
+  background: #f9f9f9;
+  color: #333;
 }
 
-/* Header */
 header {
-    background-color: #6D9DC5; /* Dusty Blue untuk header */
-    padding: 20px;
-    color: white;
-    position: sticky;
-    top: 0;
-    text-align: center;
+  background-color: #004aad;
+  color: white;
+  padding: 1rem 2rem;
 }
 
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: linear-gradient(#A7C7E7, #6D9DC5); /* Gradasi warna biru */
-    padding: 15px;
+header h1 {
+  font-size: 1.8rem;
 }
 
-.nav-links {
-    list-style: none;
-    display: flex;
-    gap: 15px;
+nav {
+  margin-top: 0.5rem;
 }
 
-.nav-links li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
+nav a {
+  color: white;
+  margin-right: 1.5rem;
+  text-decoration: none;
+  font-weight: 600;
 }
 
-.nav-links li a:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-    border-radius: 5px;
-}
-
-/* Hero Section */
 .hero {
-    background: linear-gradient(#A7C7E7, #6D9DC5); /* Gradasi biru lembut */
-    color: white;
-    text-align: center;
-    padding: 150px 20px; /* Memberikan lebih banyak ruang */
+  padding: 4rem 2rem;
+  background-color: #e6f0ff;
+  text-align: center;
 }
 
-.hero h1 {
-    font-size: 3em; /* Ukuran huruf lebih besar */
-    margin-bottom: 20px;
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
 }
 
 .hero p {
-    font-size: 1.5em;
-    margin-bottom: 30px;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
 }
 
-/* Call to Action Button */
-.cta-button {
-    background: #F2E1C1; /* Soft Beige untuk tombol */
-    color: #6D9DC5; /* Dusty Blue */
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-.cta-button:hover {
-    background-color: #D8B16D; /* Soft Gold */
-    color: white;
-}
-
-/* Footer */
-footer {
-    background-color: #6D9DC5; /* Dusty Blue footer */
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
-
-/* Responsif untuk layar kecil */
-@media (max-width: 768px) {
-    /* Navbar */
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 10px;
-    }
-
-    .nav-links {
-        flex-direction: column;
-        gap: 10px;
-        margin-top: 10px;
-    }
-
-    .nav-links li a {
-        padding: 8px 15px;
-        font-size: 16px; /* Ukuran font lebih kecil */
-    }
-
-    /* Hero Section */
-    .hero {
-        padding: 100px 20px; /* Mengurangi padding */
-    }
-
-    .hero h1 {
-        font-size: 2.5em; /* Ukuran teks lebih kecil di ponsel */
-    }
-
-    .hero p {
-        font-size: 1.2em; /* Ukuran teks lebih kecil di ponsel */
-    }
-
-    /* Call to Action Button */
-    .cta-button {
-        padding: 12px 25px;
-        font-size: 1.2em;
-    }
-
-    /* Footer */
-    footer {
-        padding: 15px;
-    }
-}
-
-@media (max-width: 480px) {
-    .hero h1 {
-        font-size: 2em; /* Ukuran teks lebih kecil untuk layar lebih kecil */
-    }
-
-    .hero p {
-        font-size: 1.1em; /* Ukuran teks lebih kecil untuk layar lebih kecil */
-    }
-}
+.button {
+  background-color: #004aad;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  text-decoration: none;
+  display: inline-block;
