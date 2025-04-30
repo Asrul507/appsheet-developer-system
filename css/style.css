@@ -3,25 +3,24 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #F2E1C1; /* Soft Beige background */
+    color: #333333; /* Teks gelap untuk kontras */
 }
 
 header {
-    background-color: #0D47A1;
+    background-color: #6D9DC5; /* Dusty Blue untuk header */
     padding: 20px;
     color: white;
     position: sticky;
     top: 0;
     text-align: center;
-    z-index: 10; /* Mengatasi tumpang tindih */
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(#2196F3, #0D47A1);
+    background: linear-gradient(#A7C7E7, #6D9DC5); /* Soft Blue to Dusty Blue gradient */
     padding: 15px;
 }
 
@@ -35,67 +34,42 @@ header {
     color: white;
     text-decoration: none;
     font-size: 18px;
-    padding: 10px 20px;
 }
 
 .nav-links li a:hover {
-    background-color: rgba(255, 255, 255, 0.2); /* Efek hover dengan transparansi */
+    background-color: rgba(255, 255, 255, 0.2);
     border-radius: 5px;
 }
 
-/* Hero Section */
 .hero {
-    background: linear-gradient(#2196F3, #0D47A1);
+    background: linear-gradient(#A7C7E7, #6D9DC5);
     color: white;
     text-align: center;
     padding: 100px 20px;
 }
 
 .cta-button {
-    background: white;
-    color: #0D47A1;
+    background: #F2E1C1; /* Soft Beige for CTA button */
+    color: #6D9DC5; /* Dusty Blue */
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
-    margin-top: 20px;
-    font-weight: bold;
 }
 
 .cta-button:hover {
-    background-color: #0D47A1;
+    background-color: #D8B16D; /* Soft Gold */
     color: white;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 10px;
-    }
-
-    .nav-links {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .nav-links li a {
-        padding: 8px 15px;
-    }
-
-    .hero {
-        padding: 80px 20px; /* Mengurangi padding di hero section untuk layar kecil */
-    }
 }
 
 /* Section styles */
 section {
     padding: 40px 20px;
-    background-color: #2196F3; /* Background biru untuk halaman */
+    background-color: #A7C7E7; /* Soft Blue background */
 }
 
+/* Footer */
 footer {
-    background-color: #333; /* Warna abu-abu untuk footer */
+    background-color: #6D9DC5; /* Dusty Blue footer */
     color: white;
     padding: 20px;
     text-align: center;
@@ -107,61 +81,5 @@ footer a {
 }
 
 footer a:hover {
-    text-decoration: underline;
-}
-
-/* Extra Styling for Headings */
-h1, h2, h3 {
-    margin: 0;
-    font-weight: bold;
-}
-
-h1 {
-    font-size: 3em;
-}
-
-h2 {
-    font-size: 2.5em;
-}
-
-h3 {
-    font-size: 2em;
-}
-
-/* Style for Article Section */
-.article {
-    background-color: white;
-    color: #333;
-    padding: 40px 20px;
-    margin-top: 30px;
-    border-radius: 10px;
-}
-
-.article h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-}
-
-.article p {
-    font-size: 1.2em;
-    line-height: 1.8;
-    margin-bottom: 20px;
-}
-
-.article ul {
-    margin-left: 20px;
-}
-
-.article ul li {
-    font-size: 1.2em;
-    margin-bottom: 10px;
-}
-
-.article a {
-    color: #0D47A1;
-    text-decoration: none;
-}
-
-.article a:hover {
     text-decoration: underline;
 }
