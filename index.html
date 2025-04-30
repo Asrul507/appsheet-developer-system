@@ -1,77 +1,179 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <link rel="stylesheet" href="css/style.css">
-   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Appsheet Developer System - Jasa pembuatan aplikasi berbasis AppSheet.">
-  <meta property="og:title" content="Appsheet Developer System">
-  <meta property="og:description" content="Jasa profesional pembuatan aplikasi berbasis AppSheet.">
-  <meta property="og:image" content="https://example.com/images/og-image.jpg">
-  <title>Appsheet Developer System</title>
-  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SmartSheet Solutions</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background-color: #004aad;
+      color: white;
+      padding: 1rem 2rem;
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+    }
+
+    nav {
+      margin-top: 0.5rem;
+    }
+
+    nav a {
+      color: white;
+      margin-right: 1.5rem;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .hero {
+      padding: 4rem 2rem;
+      background-color: #e6f0ff;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+    }
+
+    .button {
+      background-color: #004aad;
+      color: white;
+      padding: 0.8rem 1.5rem;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      text-decoration: none;
+    }
+
+    .section {
+      padding: 3rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .section h3 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #004aad;
+    }
+
+    .card {
+      background-color: white;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      margin-bottom: 1.5rem;
+    }
+
+    .price-list {
+      display: grid;
+      gap: 1.5rem;
+    }
+
+    .whatsapp-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      color: white;
+      padding: 0.75rem 1.2rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    footer {
+      background-color: #002f6c;
+      color: white;
+      text-align: center;
+      padding: 1.5rem 2rem;
+      margin-top: 3rem;
+    }
+  </style>
 </head>
 <body>
-  <header id="header">
-    <nav class="navbar">
-      <div class="logo">AppsheetDev</div>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">Tentang Kami</a></li>
-        <li><a href="portfolio.html">Portofolio</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="contact.html">Kontak</a></li>
-      </ul>
+  <header>
+    <h1>SmartSheet Solutions</h1>
+    <nav>
+      <a href="#layanan">Layanan</a>
+      <a href="#harga">Harga</a>
+      <a href="#kontak">Kontak</a>
     </nav>
   </header>
 
   <section class="hero">
-    <h1>Selamat Datang di Appsheet Developer System</h1>
-    <p>Solusi Aplikasi Tanpa Coding</p>
-    <a href="contact.html" class="cta-button">Konsultasi Gratis</a>
+    <h2>Aplikasi Bisnis Tanpa Coding</h2>
+    <p>Kami bantu buatkan aplikasi berbasis AppSheet untuk kebutuhan bisnismu</p>
+    <a href="#kontak" class="button">Konsultasi Gratis</a>
   </section>
 
-  <!-- ======== AppSheet Section Start ======== -->
-  <section id="about-appsheet" class="section">
-    <div class="container">
-      <h2 class="section-title">🌟 Apa Itu AppSheet dan Mengapa Cocok untuk Bisnis Anda?</h2>
-      <p class="section-text">
-        Di era digital saat ini, banyak bisnis dari skala kecil hingga besar membutuhkan aplikasi untuk mempermudah operasional.
-        Namun, kendala umum yang sering muncul adalah keterbatasan waktu, biaya, dan tenaga ahli IT.
-        <strong>AppSheet</strong> hadir sebagai solusi <strong>pembuatan aplikasi tanpa coding</strong> yang cepat, efisien, dan fleksibel.
-      </p>
+  <section class="section" id="layanan">
+    <h3>Layanan Kami</h3>
+    <div class="card">
+      <p>✅ Pembuatan aplikasi custom berbasis Google Sheets & AppSheet</p>
+      <p>✅ Aplikasi inventaris, absensi, kasir, logistik, dan lainnya</p>
+      <p>✅ Integrasi ke Looker Studio dan Google Form</p>
+      <p>✅ Maintenance & pelatihan penggunaan</p>
+    </div>
+  </section>
 
-      <h3 class="section-subtitle">✅ Apa Itu AppSheet?</h3>
-      <p class="section-text">
-        <strong>AppSheet</strong> adalah platform milik Google yang memungkinkan siapa saja untuk membuat aplikasi mobile dan web
-        langsung dari data spreadsheet seperti <em>Google Sheets</em>, <em>Excel</em>, atau <em>SQL</em>, tanpa menulis satu baris kode pun.
-      </p>
-
-      <h3 class="section-subtitle">💡 Kelebihan AppSheet:</h3>
-      <ul class="section-list">
-        <li><strong>Tanpa Coding, Hemat Biaya:</strong> Aplikasi bisa langsung dibuat dari data yang Anda punya tanpa perlu developer.</li>
-        <li><strong>Cepat dan Fleksibel:</strong> Aplikasi bisa dibuat dalam hitungan jam, cocok untuk kebutuhan mendesak.</li>
-        <li><strong>Terintegrasi dengan Google Workspace:</strong> Bekerja mulus dengan Sheets, Drive, Calendar, dan lainnya.</li>
-        <li><strong>Bisa Digunakan Offline:</strong> Cocok untuk bisnis lapangan atau daerah tanpa koneksi internet stabil.</li>
-        <li><strong>Kontrol Akses dan Keamanan:</strong> Bisa atur siapa yang bisa akses aplikasi Anda.</li>
-        <li><strong>Multi-platform Otomatis:</strong> Sekali buat, bisa dipakai di Android, iPhone, dan desktop.</li>
-      </ul>
-
-      <h3 class="section-subtitle">🚀 Kenapa Harus Menggunakan Jasa Kami?</h3>
-      <p class="section-text">
-        Kami telah membantu berbagai jenis bisnis — mulai dari perhotelan, manajemen gudang, hingga laporan keuangan —
-        untuk memiliki aplikasi yang <strong>sesuai kebutuhan</strong>, <strong>mudah digunakan</strong>, dan <strong>hemat biaya</strong>.
-      </p>
-
-      <div class="section-cta">
-        <a href="https://wa.me/6281234567890" target="_blank" class="cta-button">
-          🎯 Konsultasi Gratis Sekarang
-        </a>
+  <section class="section" id="harga">
+    <h3>Paket Harga</h3>
+    <div class="price-list">
+      <div class="card">
+        <h4>Paket Starter</h4>
+        <p>💰 Rp100.000</p>
+        <p>Untuk aplikasi sederhana (max 1 sheet & 5 kolom)</p>
+      </div>
+      <div class="card">
+        <h4>Paket Bisnis</h4>
+        <p>💰 Rp250.000</p>
+        <p>Aplikasi menengah (max 3 sheet, fitur validasi, summary)</p>
+      </div>
+      <div class="card">
+        <h4>Paket Profesional</h4>
+        <p>💰 Rp500.000+</p>
+        <p>Aplikasi kompleks (automation, login user, multi form)</p>
       </div>
     </div>
   </section>
-  <!-- ======== AppSheet Section End ======== -->
 
-  <script src="js/script.js"></script>
+  <section class="section" id="kontak">
+    <h3>Hubungi Kami</h3>
+    <div class="card">
+      <p>Konsultasi via WhatsApp:</p>
+      <p><strong>0851-5915-8228</strong> (Asrul)</p>
+      <a class="button" href="https://wa.me/6285159158228" target="_blank">Chat Sekarang</a>
+    </div>
+  </section>
+
+  <a href="https://wa.me/6285159158228" class="whatsapp-button" target="_blank">💬 WhatsApp</a>
+
+  <footer>
+    <p>&copy; 2025 SmartSheet Solutions. All rights reserved.</p>
+  </footer>
 </body>
 </html>
