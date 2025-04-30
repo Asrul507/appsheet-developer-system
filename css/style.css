@@ -1,17 +1,20 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    color: #333;
 }
 
 header {
-    background: #0D47A1;
+    background-color: #0D47A1;
     padding: 20px;
     color: white;
     position: sticky;
     top: 0;
     text-align: center;
+    z-index: 10; /* Mengatasi tumpang tindih */
 }
 
 .navbar {
@@ -36,9 +39,11 @@ header {
 }
 
 .nav-links li a:hover {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.2); /* Efek hover dengan transparansi */
+    border-radius: 5px;
 }
 
+/* Hero Section */
 .hero {
     background: linear-gradient(#2196F3, #0D47A1);
     color: white;
@@ -52,12 +57,21 @@ header {
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
+    margin-top: 20px;
+    font-weight: bold;
 }
 
+.cta-button:hover {
+    background-color: #0D47A1;
+    color: white;
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
     .navbar {
         flex-direction: column;
         align-items: flex-start;
+        padding: 10px;
     }
 
     .nav-links {
@@ -68,66 +82,15 @@ header {
     .nav-links li a {
         padding: 8px 15px;
     }
+
+    .hero {
+        padding: 80px 20px; /* Mengurangi padding di hero section untuk layar kecil */
+    }
 }
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #2196F3; /* Background biru di seluruh halaman */
-    color: white;
-}
-
-header {
-    background-color: #333; /* Warna abu-abu untuk header */
-    padding: 20px;
-    color: white;
-    position: sticky;
-    top: 0;
-}
-
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.nav-links {
-    list-style: none;
-    display: flex;
-    gap: 15px;
-}
-
-.nav-links li a {
-    color: white;
-    text-decoration: none;
-}
-
-.nav-links li a:hover {
-    background-color: rgba(255, 255, 255, 0.2); /* Efek hover untuk link */
-    padding: 5px;
-    border-radius: 5px;
-}
-
-.hero {
-    background: linear-gradient(#2196F3, #0D47A1); /* Latar belakang gradasi biru */
-    color: white;
-    text-align: center;
-    padding: 100px 20px;
-}
-
-.cta-button {
-    background: white;
-    color: #0D47A1;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 20px;
-}
-
-/* Style untuk halaman lain */
+/* Section styles */
 section {
-    padding: 20px;
+    padding: 40px 20px;
     background-color: #2196F3; /* Background biru untuk halaman */
 }
 
@@ -136,4 +99,69 @@ footer {
     color: white;
     padding: 20px;
     text-align: center;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Extra Styling for Headings */
+h1, h2, h3 {
+    margin: 0;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2.5em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+/* Style for Article Section */
+.article {
+    background-color: white;
+    color: #333;
+    padding: 40px 20px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+.article h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.article p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.article ul {
+    margin-left: 20px;
+}
+
+.article ul li {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.article a {
+    color: #0D47A1;
+    text-decoration: none;
+}
+
+.article a:hover {
+    text-decoration: underline;
 }
