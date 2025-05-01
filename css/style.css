@@ -11,10 +11,10 @@
     }
 
     header {
-      background-color: #004aad;
-      color: white;
-      padding: 1rem 2rem;
-    }
+  background-color: white;   
+  color: #004aad;            
+  padding: 1rem 2rem;       
+
 
     header h1 {
       font-size: 1.8rem;
