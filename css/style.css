@@ -11,9 +11,10 @@
     }
 
     header {
-  background-color: white;   
-  color: #004aad;            
-  padding: 1rem 2rem;       
+      background-color: #004aad;
+      color: white;
+      padding: 1rem 2rem;
+    }      
 
 
     header h1 {
